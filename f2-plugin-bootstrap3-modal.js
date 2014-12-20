@@ -46,7 +46,7 @@ function _modalHtml(title, message, showCancel) {
 	].join('');
 };
 
-module.exports = function(F2) {
+(function(F2) {
 
 	function alert(message, callback) {
 		callback = callback || function() {};
@@ -87,4 +87,4 @@ module.exports = function(F2) {
 		confirm: confirm
 	});
 
-};
+}());
